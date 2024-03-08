@@ -1,0 +1,97 @@
+body {
+   animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
+   }
+}
+
+.football {
+   background-color: white;
+
+
+   border: 3px red
+}
+
+.line1 {
+   height: 30px;
+   background-color: red;
+   display: block;
+   flex-direction: column;
+   margin-bottom: 60px;
+}
+
+.line2 {
+   margin-top: 60px;
+   height: 30px;
+   background-color: red;
+   display: block;
+   flex-direction: column;
+
+   background-color: red;
+   display: block;
+   flex-direction: column;
+}
+
+.icon img {
+   margin: auto;
+   display: block;
+   position: absolute;
+   top: 300px;
+   right: 35%;
+   align-items: center;
+   opacity: 70%;
+   z-index: -3;
+   flex-direction: center;
+   width: 500px;
+   text-align: center;
+   animation: float 3s infinite;
+}
+
+@keyframes float {
+   0% {
+      transform: translateY(0);
+   }
+
+   50% {
+      transform: translateY(-20px);
+   }
+
+   100% {
+      transform: translateY(0);
+   }
+}
+
+.inp {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.inp input {
+   width: 300px;
+   margin-bottom: 10px;
+   padding: 10px;
+   border: 2px solid blue;
+   flex-direction: row;
+}
+
+.inp button {
+   background-color: rgb(255, 34, 0);
+   color: white;
+   border: 3px solid rgb(255, 0, 0);
+   padding: 10px 20px;
+   transition: transform 0.6s;
+}
+
+.inp button:hover {
+   transform: scale(1.1);
+
+}
