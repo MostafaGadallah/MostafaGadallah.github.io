@@ -1,97 +1,147 @@
 body {
-   animation: fadeIn 3s;
+    font-family: Verdana, Tahoma, sans-serif;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw6nhTGYm2BdM3qAe_wahbZ19gOreueps2Yxedz1g6XQ&s") no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 300px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+span {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    background-color: #f1f3f5;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+span:last-child {
+    margin-right: 0;
+}
+
+span:hover {
+    background-color: #dee2e6;
+}
+
+.equation {
+    width: calc(100% - 40px);
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: right;
+}
+
+.result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.result span {
+    font-size: 24px;
+    color: #007bff;
+    min-width: 230px;
+    text-align: center;
+}
+.reset{
+    margin: 10px;
+    padding: 10px;
+}
+.resetform{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    margin: 0;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative; /* Add relative positioning */
+}
+
+.nav-links li a:hover {
+    text-decoration: none; 
+}
+
+.nav-links li a::before {
+    content: ''; 
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%; 
+    height: 2px; 
+    background-color: #fff;
+    transform: scaleX(0); 
+    transition: transform 0.3s ease; 
+}
+
+.nav-links li a:hover::before {
+    transform: scaleX(1); 
 }
 
 @keyframes fadeIn {
-   from {
-      opacity: 0;
-   }
-
-   to {
-      opacity: 1;
-   }
-}
-
-.football {
-   background-color: white;
-
-
-   border: 3px red
-}
-
-.line1 {
-   height: 30px;
-   background-color: red;
-   display: block;
-   flex-direction: column;
-   margin-bottom: 60px;
-}
-
-.line2 {
-   margin-top: 60px;
-   height: 30px;
-   background-color: red;
-   display: block;
-   flex-direction: column;
-
-   background-color: red;
-   display: block;
-   flex-direction: column;
-}
-
-.icon img {
-   margin: auto;
-   display: block;
-   position: absolute;
-   top: 300px;
-   right: 35%;
-   align-items: center;
-   opacity: 70%;
-   z-index: -3;
-   flex-direction: center;
-   width: 500px;
-   text-align: center;
-   animation: float 3s infinite;
-}
-
-@keyframes float {
-   0% {
-      transform: translateY(0);
-   }
-
-   50% {
-      transform: translateY(-20px);
-   }
-
-   100% {
-      transform: translateY(0);
-   }
-}
-
-.inp {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-}
-
-.inp input {
-   width: 300px;
-   margin-bottom: 10px;
-   padding: 10px;
-   border: 2px solid blue;
-   flex-direction: row;
-}
-
-.inp button {
-   background-color: rgb(255, 34, 0);
-   color: white;
-   border: 3px solid rgb(255, 0, 0);
-   padding: 10px 20px;
-   transition: transform 0.6s;
-}
-
-.inp button:hover {
-   transform: scale(1.1);
-
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

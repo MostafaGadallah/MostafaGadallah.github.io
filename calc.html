@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="calc.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Zamalek</h1>
+            <ul class="nav-links">
+                <li><a href="login.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="calc.html">Calc</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <h1>zamalek Calculator</h1>
+        <input type="text"readonly class="equation">
+        <div class="row">
+            <span onclick="numper('1')">1</span>
+            <span onclick="numper('2')">2</span>
+            <span onclick="numper('3')">3</span>
+            <span onclick="parametar('+')">+</span>
+        </div>
+        <div class="row">
+            <span onclick="numper('4')">4</span>
+            <span onclick="numper('5')">5</span>
+            <span onclick="numper('6')">6</span>
+            <span onclick="parametar('-')">-</span>
+        </div>
+        <div class="row">
+            <span onclick="numper('7')">7</span>
+            <span onclick="numper('8')">8</span>
+            <span onclick="numper('9')">9</span>
+            <span onclick="parametar('x')">x</span>
+        </div>
+        <div class="row">
+            <span onclick="numper('0')">0</span>
+            <span onclick="equal('=')">=</span>
+            <span onclick="deletenum('<-')"><-</span>
+            <span onclick="parametar('/')">/</span>
+        </div>
+    </main>
+    <div class="result"> <span>empty</span></div>
+    <form class="resetform" action="calc.html">
+    <button class="reset" onclick="reload()">reset</button>
+    </form>
+</body>
+</html>
