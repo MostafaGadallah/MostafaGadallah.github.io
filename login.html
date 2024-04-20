@@ -44,6 +44,7 @@
             let password= "123"
             if (account === document.querySelector("#username").value && password === document.querySelector('#password').value){
                 console.log("signed in sucssesfully")
+                window.location.assign("calc.html");
             }
             console.log(document.querySelector("#username").value)
         }
